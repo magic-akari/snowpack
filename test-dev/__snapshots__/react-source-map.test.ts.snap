@@ -14,7 +14,7 @@ if (import.meta.hot) {
     var prevRefreshSig = window.$RefreshSig$;
 
     window.$RefreshReg$ = (type, id) => {
-      window.$RefreshRuntime$.register(type, \\"/Users/akari/Github/snowpack/test-dev/react-source-map/src/app.js\\" + ' ' + id);
+      window.$RefreshRuntime$.register(type, \\"/home/runner/work/snowpack/snowpack/test-dev/react-source-map/src/app.js\\" + ' ' + id);
     };
 
     window.$RefreshSig$ = window.$RefreshRuntime$.createSignatureFunctionForTransform;
@@ -76,7 +76,7 @@ Object {
   "mappings": ";;;;;;;;;;;;;;;;;;;;;;AAAA,OAAA,KAAA,IAAA,QAAA,EAAA,SAAA,QAAA,OAAA;AACA,OAAA,KAAA,MAAA,YAAA;AACA,OAAA,WAAA;;AAEA,SAAA,IAAA,GAAA;AAAA,EAAA,EAAA;;AAEE,QAAM,CAAA,KAAA,EAAA,QAAA,IAAoB,QAAA,CAA1B,CAA0B,CAA1B;AAEA,EAAA,SAAA,CAAU,MAAA;AACR,UAAA,KAAA,GAAc,UAAA,CAAW,MAAM,QAAA,CAAS,KAAA,GAA1B,CAAiB,CAAjB,EAAd,GAAc,CAAd;AACA,WAAO,MAAM,YAAA,CAAb,KAAa,CAAb;AAFF,GAAA,EAGG,CAAA,KAAA,EAHH,QAGG,CAHH,CAAA;AAKA,SACE,eAAA,KAAA,CAAA,aAAA,CAAA,KAAA,EAAA;AAAK,IAAA,SAAA,EAAU;AAAf,GAAA,EACE,eAAA,KAAA,CAAA,aAAA,CAAA,QAAA,EAAA;AAAQ,IAAA,SAAA,EAAU;AAAlB,GAAA,EACE,eAAA,KAAA,CAAA,aAAA,CAAA,KAAA,EAAA;AAAK,IAAA,GAAA,EAAL,KAAA;AAAgB,IAAA,SAAA,EAAhB,UAAA;AAAqC,IAAA,GAAA,EAAI;AAAzC,GAAA,CADF,EAEE,eAAA,KAAA,CAAA,aAAA,CAAA,GAAA,EAAA,IAAA,EAAA,OAAA,EACO,eAAA,KAAA,CAAA,aAAA,CAAA,MAAA,EAAA,IAAA,EADP,aACO,CADP,EAFF,sBAEE,CAFF,EAKE,eAAA,KAAA,CAAA,aAAA,CAAA,GAAA,EAAA,IAAA,EAAA,yBAAA,EACyB,eAAA,KAAA,CAAA,aAAA,CAAA,MAAA,EAAA,IAAA,EADzB,KACyB,CADzB,EALF,WAKE,CALF,EAQE,eAAA,KAAA,CAAA,aAAA,CAAA,GAAA,EAAA,IAAA,EACE,eAAA,KAAA,CAAA,aAAA,CAAA,GAAA,EAAA;AACE,IAAA,SAAA,EADF,UAAA;AAEE,IAAA,IAAA,EAFF,qBAAA;AAGE,IAAA,MAAA,EAHF,QAAA;AAIE,IAAA,GAAA,EAAI;AAJN,GAAA,EAXR,aAWQ,CADF,CARF,CADF,CADF;AAgBS;;GAzBX,I;;KAAA,I;AAkCA,eAAA,IAAA",
   "names": Array [],
   "sources": Array [
-    "/Users/akari/Github/snowpack/test-dev/react-source-map/src/app.jsx",
+    "/home/runner/work/snowpack/snowpack/test-dev/react-source-map/src/app.jsx",
   ],
   "sourcesContent": Array [
     "import React, { useState, useEffect } from 'react';
@@ -859,7 +859,7 @@ Object {
   "mappings": ";;;;AAAA,OAAA,KAAA,MAAA,OAAA;AACA,OAAA,QAAA,MAAA,WAAA;AACA,OAAA,IAAA,MAAA,WAAA;AACA,OAAA,aAAA;AAEA,QAAA,CAAS,MAAT,EACE,eAAA,KAAA,CAAA,aAAA,CAAC,KAAA,CAAM,UAAP,EAAA,IAAA,EACE,eAAA,KAAA,CAAA,aAAA,CAAC,IAAD,EAAA,IAAA,CADF,CADF,EAIE,QAAA,CAAS,cAAT,CAAwB,MAAxB,CAJF;;AASA,IAAI,MAAA,CAAA,IAAA,CAAY,GAAhB,EAAgB;AACd,EAAA,MAAA,CAAA,IAAA,CAAY,GAAZ,CAAgB,MAAhB;AAAgB",
   "names": Array [],
   "sources": Array [
-    "/Users/akari/Github/snowpack/test-dev/react-source-map/src/index.jsx",
+    "/home/runner/work/snowpack/snowpack/test-dev/react-source-map/src/index.jsx",
   ],
   "sourcesContent": Array [
     "import React from 'react';

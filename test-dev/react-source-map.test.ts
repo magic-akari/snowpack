@@ -44,14 +44,14 @@ describe('snowpack dev', () => {
       const timeout = setTimeout(() => {
         snowpackProcess.cancel();
         console.error(output.join(''));
-        reject(new Error('Timeout: snowpack did not start server within 3 seconds.'));
-      }, 3000);
+        reject(new Error('Timeout: snowpack did not start server within 6 seconds.'));
+      }, 6000);
 
       const output = [];
       snowpackProcess.stdout.on('data', (buffer) => {
         const line = buffer.toString();
         output.push(line);
-        if (/Server started in/.test(line)) {
+        if (/Server started/.test(line)) {
           resolve(undefined);
           clearTimeout(timeout);
         }
