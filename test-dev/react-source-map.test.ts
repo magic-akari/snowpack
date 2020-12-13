@@ -6,6 +6,8 @@ const glob = require('glob');
 const os = require('os');
 const {get} = require('httpie');
 
+const rootDir = path.resolve(__dirname, './react-source-map');
+
 describe('snowpack dev', () => {
   let snowpackProcess;
   afterEach(async () => {
@@ -68,14 +70,17 @@ describe('snowpack dev', () => {
 
     // get built index map
     const {data: indexJsMap} = await get('http://localhost:8081/_dist_/index.js.map');
+    indexJsMap.sources = indexJsMap.sources.map((p) => path.relative(rootDir, p));
     expect(indexJsMap).toMatchSnapshot('index.js.map');
 
     // get built app JS
-    const {data: appJs} = await get('http://localhost:8081/_dist_/app.js');
-    expect(appJs).toMatchSnapshot('app.js');
+    const {data: appJs} = await get('http://localhost:8081/_dist_/App.js');
+    expect(appJs).toMatchSnapshot('App.js');
 
     // get built app map
-    const {data: appJsMap} = await get('http://localhost:8081/_dist_/app.js.map');
-    expect(appJsMap).toMatchSnapshot('app.js.map');
+    const {data: appJsMap} = await get('http://localhost:8081/_dist_/App.js.map');
+    appJsMap.sources = appJsMap.sources.map((p) => path.relative(rootDir, p));
+
+    expect(appJsMap).toMatchSnapshot('App.js.map');
   });
 });
