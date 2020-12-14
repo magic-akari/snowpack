@@ -46,8 +46,8 @@ describe('snowpack dev', () => {
       const timeout = setTimeout(() => {
         snowpackProcess.cancel();
         console.error(output.join(''));
-        reject(new Error('Timeout: snowpack did not start server within 6 seconds.'));
-      }, 6000);
+        reject(new Error('Timeout: snowpack did not start server within 8 seconds.'));
+      }, 8000);
 
       const output = [];
       snowpackProcess.stdout.on('data', (buffer) => {
@@ -65,22 +65,22 @@ describe('snowpack dev', () => {
     expect(htmlBody).toMatchSnapshot('html');
 
     // get built index JS
-    let {data: indexJs} = await get('http://localhost:8081/_dist_/index.js');
+    let {data: indexJs} = await get('http://localhost:8081/dist/index.js');
     indexJs = indexJs.replace(new RegExp(rootDir, 'g'), '<rootDir>');
     expect(indexJs).toMatchSnapshot('index.js');
 
     // get built index map
-    const {data: indexJsMap} = await get('http://localhost:8081/_dist_/index.js.map');
+    const {data: indexJsMap} = await get('http://localhost:8081/dist/index.js.map');
     indexJsMap.sources = indexJsMap.sources.map((p) => path.relative(rootDir, p));
     expect(indexJsMap).toMatchSnapshot('index.js.map');
 
     // get built app JS
-    let {data: appJs} = await get('http://localhost:8081/_dist_/App.js');
+    let {data: appJs} = await get('http://localhost:8081/dist/App.js');
     appJs = appJs.replace(new RegExp(rootDir, 'g'), '<rootDir>');
     expect(appJs).toMatchSnapshot('App.js');
 
     // get built app map
-    const {data: appJsMap} = await get('http://localhost:8081/_dist_/App.js.map');
+    const {data: appJsMap} = await get('http://localhost:8081/dist/App.js.map');
     appJsMap.sources = appJsMap.sources.map((p) => path.relative(rootDir, p));
 
     expect(appJsMap).toMatchSnapshot('App.js.map');
