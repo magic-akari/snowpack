@@ -13,7 +13,7 @@
     "access": "public"
   },
   "dependencies": {
-    "enhanced-resolve": "^4.1.1"
+    "enhanced-resolve": "^5.4.0"
   },
   "devDependencies": {
     "@babel/core": "^7.10.5",
