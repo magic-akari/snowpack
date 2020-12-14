@@ -2378,7 +2378,12 @@
   resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.5.4.tgz#de25b5da9f727985a3757fd59b5d028aba75841a"
   integrity sha512-ZpKr+WTb8zsajqgDkvCEWgp6d5eJT6Q63Ng2neTbzBO76Lbe91vX/iVIW9dikq+Fs3yEo+ls4cxeXABD2LtcbQ==
 
-"@prefresh/babel-plugin@0.2.2", "@prefresh/babel-plugin@^0.2.2":
+"@prefresh/babel-plugin@0.3.0":
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/@prefresh/babel-plugin/-/babel-plugin-0.3.0.tgz#6e5be66dc120f495bbcc94c5645e68ec10b98674"
+  integrity sha512-4VqFK5r0ySG+crNrLuP2AQUtny1hwJ42Usd1IYvPDOClpS5TeKw9hXwvoZ06BZQehCWyJY4WYJ39hkuvFNiX3g==
+
+"@prefresh/babel-plugin@^0.2.2":
   version "0.2.2"
   resolved "https://registry.yarnpkg.com/@prefresh/babel-plugin/-/babel-plugin-0.2.2.tgz#b921f0a1350a9daa9106518378a4e5a49211e6f6"
   integrity sha512-NDPMsDs5QncSdOX7zsATwypf1IWtYvOX23X3t4DOcZsVErRABqdlUTZ2RAf4KfOAIjSZhR9p0Htchqp8rQr14Q==
@@ -2389,13 +2394,13 @@
   integrity sha512-JKh+tUzswqZgA3+lYywIcJt261M0xjI0FpMnZXQ/85bPOl/I4HdVeEUcT9rjXqsiZRrjHJMwSjZWI/HqsqgqyA==
 
 "@prefresh/snowpack@^2.0.1":
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/@prefresh/snowpack/-/snowpack-2.1.0.tgz#b367169b0ed04ee39f85e867e75cf1ee17d40f50"
-  integrity sha512-DDhp/68O4qQ+cGYZbD5mys1ey+Ti9jgGx/qz966fzOCVq/KO5TKAhVC1OUc3tR33oM6IoL51pdZh+PqFcmf5kw==
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/@prefresh/snowpack/-/snowpack-2.2.0.tgz#fbb74656167332f4ae5c1419736de14d3cba87f1"
+  integrity sha512-3Ymq3QKgVAKZqHCTTmkzeUacIqgd81U8bwULOlICz/8we6CvkzSx8SRNsCDx+WEHYsjNa5HNktONArZFAMFVYQ==
   dependencies:
     "@babel/core" "^7.9.6"
     "@babel/plugin-syntax-class-properties" "^7.10.0"
-    "@prefresh/babel-plugin" "0.2.2"
+    "@prefresh/babel-plugin" "0.3.0"
     "@prefresh/core" "^1.1.0"
     "@prefresh/utils" "^1.0.0"
 
