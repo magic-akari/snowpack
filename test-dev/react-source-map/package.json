@@ -2,8 +2,7 @@
   "snowpack": {
     "mount": {
       "public": {
-        "url": "/",
-        "static": true
+        "url": "/"
       },
       "src": {
         "url": "/dist"
