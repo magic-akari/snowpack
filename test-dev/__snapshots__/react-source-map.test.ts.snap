@@ -14,7 +14,7 @@ if (import.meta.hot) {
     var prevRefreshSig = window.$RefreshSig$;
 
     window.$RefreshReg$ = (type, id) => {
-      window.$RefreshRuntime$.register(type, \\"/Users/akari/Github/snowpack/test-dev/react-source-map/src/App.js\\" + ' ' + id);
+      window.$RefreshRuntime$.register(type, \\"<rootDir>/src/App.js\\" + ' ' + id);
     };
 
     window.$RefreshSig$ = window.$RefreshRuntime$.createSignatureFunctionForTransform;

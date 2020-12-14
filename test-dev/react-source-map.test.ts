@@ -65,7 +65,8 @@ describe('snowpack dev', () => {
     expect(htmlBody).toMatchSnapshot('html');
 
     // get built index JS
-    const {data: indexJs} = await get('http://localhost:8081/_dist_/index.js');
+    let {data: indexJs} = await get('http://localhost:8081/_dist_/index.js');
+    indexJs = indexJs.replace(new RegExp(rootDir, 'g'), '<rootDir>');
     expect(indexJs).toMatchSnapshot('index.js');
 
     // get built index map
@@ -74,7 +75,8 @@ describe('snowpack dev', () => {
     expect(indexJsMap).toMatchSnapshot('index.js.map');
 
     // get built app JS
-    const {data: appJs} = await get('http://localhost:8081/_dist_/App.js');
+    let {data: appJs} = await get('http://localhost:8081/_dist_/App.js');
+    appJs = appJs.replace(new RegExp(rootDir, 'g'), '<rootDir>');
     expect(appJs).toMatchSnapshot('App.js');
 
     // get built app map
