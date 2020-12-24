@@ -12566,9 +12566,9 @@ socks@~2.3.2:
     smart-buffer "^4.1.0"
 
 solid-js@^0.23.4:
-  version "0.23.4"
-  resolved "https://registry.yarnpkg.com/solid-js/-/solid-js-0.23.4.tgz#e59a8ad732ba0e87ac67ba6ca5a4490686c1f465"
-  integrity sha512-Pzmk8SFRT2oqpgS7e0VJk8/kevZVvS+7fBhUKaMqthPNTmqIbdTPdyTtzLTtwek4P6GEKpozxfaJzqjtMFHQFA==
+  version "0.23.5"
+  resolved "https://registry.yarnpkg.com/solid-js/-/solid-js-0.23.5.tgz#23a1881fa70a608ff1c64ef23e771716044048d1"
+  integrity sha512-V7CDnzbMVFtWUfeeBy2o0VeZqyZH0VO7Lpz4xP7kVwS32mkrYRCRZSx1eAjs/HyXk4asANirDQIAgxe8jdVl5w==
 
 "some-custom-lookup-package@file:./test/build/config-package-lookup-fields/packages/some-custom-lookup-package":
   version "1.0.0"
