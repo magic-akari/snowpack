@@ -2570,9 +2570,9 @@
     "@testing-library/dom" "^7.28.1"
 
 "@testing-library/svelte@^3.0.0":
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/@testing-library/svelte/-/svelte-3.0.1.tgz#dce68d22185b76e0d3a4c265bff78f648b62003b"
-  integrity sha512-9SrhsW+xcAcxdS97+2hHUVUhCXMGREcKYvVAd0DUOk6V4czbHMN2sg6ONMiAK0ApYzlKiSr9IMXBu85rykcWQQ==
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/@testing-library/svelte/-/svelte-3.0.3.tgz#fd0653c02c95c8715ff5a51aa232e3306536755e"
+  integrity sha512-GxafAllShGM2nkntFGURZ7fYVlUYwv7K62lqv1aFqtTYzzeZ2Cu8zTVhtE/Qt3bk2zMl6+FPKP03wjLip/G8mA==
   dependencies:
     "@testing-library/dom" "^7.0.3"
 
