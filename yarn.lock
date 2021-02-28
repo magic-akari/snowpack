@@ -12727,10 +12727,10 @@ ripemd160@^2.0.0, ripemd160@^2.0.1:
     hash-base "^3.0.0"
     inherits "^2.0.1"
 
-rollup-plugin-polyfill-node@^0.4.1:
-  version "0.4.1"
-  resolved "https://registry.yarnpkg.com/rollup-plugin-polyfill-node/-/rollup-plugin-polyfill-node-0.4.1.tgz#3a1207e725d4b30725b754875a34ee6b4e695f56"
-  integrity sha512-PxON/asmp3BuBaJPUToUQSq3RA6MpDma0zlK+NuQoBgxImMOPjVeelkdLYh0EWo9ZSJbCqDDkckAAM0wOwvysQ==
+rollup-plugin-polyfill-node@^0.6.0:
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/rollup-plugin-polyfill-node/-/rollup-plugin-polyfill-node-0.6.0.tgz#84185417982c3071c5cb0c1f0637e03e07cad3d3"
+  integrity sha512-kpPRhA6om8ZSzL9xtlJGISkXaMH2KLtskENvTorPjLlwtmkCrhc+w6E0SFzS1fD3zlgDJOMY1/MFhJe1D9Nyfg==
   dependencies:
     "@rollup/plugin-inject" "^4.0.0"
 
